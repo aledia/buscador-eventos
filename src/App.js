@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import CategoriasProvider from './context/CategoriasContext';
 
 
 function App() {
@@ -9,9 +10,9 @@ function App() {
 
   
   return (
-    <React.Fragment>
+    <CategoriasProvider>
       <Header/>
-    </React.Fragment>
+    </CategoriasProvider>
   );
 }
 
